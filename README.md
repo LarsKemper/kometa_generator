@@ -1,5 +1,5 @@
 # HTML/CSS Generator
-# *READY TO USE VERSION*
+ *READY TO USE VERSION*
 
 JS libarys:
  - Sortable
