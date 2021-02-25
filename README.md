@@ -1,6 +1,7 @@
 # HTML/CSS Generator
 *READY TO USE VERSION!*
-HTML generator that allows to quickly and easily compose and generate or download web pages individually.
+
+ HTML generator that allows to quickly and easily compose and generate or download web pages individually.
 
 # How to run
 simply open the generator.html file in your browser
