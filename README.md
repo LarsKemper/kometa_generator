@@ -1,4 +1,4 @@
-# kometa_generator
+# HTML/CSS Generator
 
 JS libarys:
  - Sortable
