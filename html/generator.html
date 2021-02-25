@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://lars-kemper.com/css/tailwind.css">
+    <title>Kometa CSS Generator</title>
+    <script src="https://kit.fontawesome.com/2eb9b00a2d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/generator.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.13.0/Sortable.min.js" integrity="sha512-5x7t0fTAVo9dpfbp3WtE2N6bfipUwk7siViWncdDoSz2KwOqVC1N9fDxEOzk0vTThOua/mglfF8NO7uVDLRC8Q==" crossorigin="anonymous"></script>
+  </head>
+<body class="overflow-hidden font-sans">
+    <!--Section-->
+    <section class=" fixed left-0 top-0 bottom-0 overflow-y-auto bg-gray-900 p-8 w-2/3">
+      <div class="mb-8 ml-2 pb-2">
+        <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+          <svg class="w-8 text-teal-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+            <rect x="3" y="1" width="7" height="12"></rect>
+            <rect x="3" y="17" width="7" height="6"></rect>
+            <rect x="14" y="1" width="7" height="6"></rect>
+            <rect x="14" y="11" width="7" height="12"></rect>
+          </svg>
+          <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase hover:text-deep-purple-400">KOMETA GENERATOR</span>
+        </a>
+      </div>
+      <div class="border-l-2 mx-2 mb-3 filters pl-3 border-deep-purple-400">
+        <!-- General -->
+        <button
+          class="text-gray-100 font-semibold hover:text-deep-purple-500 px-2 py-1 transition-normal filter"
+          data-filter="all"
+        >
+          Alle
+        </button>
+        <button
+          class="text-gray-100 font-semibold hover:text-deep-purple-500 px-2 py-1 transition-normal filter"
+          data-filter="st-navigation"
+        >
+          Navigation
+        </button>
+        <button
+          class="text-gray-100 font-semibold hover:text-deep-purple-500 px-2 py-1 transition-normal filter"
+          data-filter="st-hero"
+        >
+          Hero
+        </button>
+        <button
+          class="text-gray-100 font-semibold hover:text-deep-purple-500 px-2 py-1 transition-normal filter"
+          data-filter="st-features"
+        >
+          Features
+        </button>
+        <button
+          class="text-gray-100 font-semibold hover:text-deep-purple-500 px-2 py-1 transition-normal filter"
+          data-filter="st-contents"
+        >
+          Contents
+        </button>
+        <button
+          class="text-gray-100 font-semibold hover:text-deep-purple-500 px-2 py-1 transition-normal filter"
+          data-filter="st-pricings"
+        >
+          Pricings
+        </button>
+        <button
+          class="text-gray-100 font-semibold hover:text-deep-purple-500 px-2 py-1 transition-normal filter"
+          data-filter="st-faqs"
+        >
+          FAQs
+        </button>
+        <button
+          class="text-gray-100 font-semibold hover:text-deep-purple-500 px-2 py-1 transition-normal filter"
+          data-filter="st-steps"
+        >
+          Steps
+        </button>
+        <button
+          class="text-gray-100 font-semibold hover:text-deep-purple-500 px-2 py-1 transition-normal filter"
+          data-filter="st-teams"
+        >
+          Teams
+        </button>
+        <button
+          class="text-gray-100 font-semibold hover:text-deep-purple-500 px-2 py-1 transition-normal filter"
+          data-filter="st-blog"
+        >
+          Blog
+        </button>
+        <button
+          class="text-gray-100 font-semibold hover:text-deep-purple-500 px-2 py-1 transition-normal filter"
+          data-filter="st-stats"
+        >
+          Stats
+        </button>
+        <button
+          class="text-gray-100 font-semibold hover:text-deep-purple-500 px-2 py-1 transition-normal filter"
+          data-filter="st-footer"
+        >
+          Footers
+        </button>
+      </div>
+      <div id="drag-left"
+        class="flex-container flex flex-wrap flex-col items-start justify-start projects"
+      >
+      <!--Nav-->
+        <figure class="item project w-1/2 p-2" data-filter="st-navigation" id="navigation-1">
+          <img
+            src="../assets/sections/navs/nav1.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-navigation" id="navigation-2">
+          <img
+            src="../assets/sections/navs/nav2.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-navigation" id="navigation-3">
+          <img
+            src="../assets/sections/navs/nav3.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-navigation" id="navigation-4">
+          <img
+            src="../assets/sections/navs/nav4.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-navigation" id="navigation-5">
+          <img
+            src="../assets/sections/navs/nav5.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-navigation" id="navigation-6">
+          <img
+            src="../assets/sections/navs/nav6.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-navigation" id="navigation-7">
+          <img
+            src="../assets/sections/navs/nav7.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-navigation" id="navigation-8">
+          <img
+            src="../assets/sections/navs/nav8.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-navigation" id="navigation-9">
+          <img
+            src="../assets/sections/navs/nav9.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-navigation" id="navigation-10">
+          <img
+            src="../assets/sections/navs/nav10.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <!--/Nav-->
+        <!--Hero-->
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-1">
+          <img
+            src="../assets/sections/hero/hero1.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-2">
+          <img
+            src="../assets/sections/hero/hero2.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"  
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-3">
+          <img
+            src="../assets/sections/hero/hero3.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-4">
+          <img
+            src="../assets/sections/hero/hero4.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-5">
+          <img
+            src="../assets/sections/hero/hero5.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-6">
+          <img
+            src="../assets/sections/hero/hero6.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-7">
+          <img
+            src="../assets/sections/hero/hero7.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-8">
+          <img
+            src="../assets/sections/hero/hero8.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-9">
+          <img
+            src="../assets/sections/hero/hero9.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-10">
+          <img
+            src="../assets/sections/hero/hero10.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-11">
+          <img
+            src="../assets/sections/hero/hero11.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-12">
+          <img
+            src="../assets/sections/hero/hero12.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-13">
+          <img
+            src="../assets/sections/hero/hero13.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-14">
+          <img
+            src="../assets/sections/hero/hero14.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-15">
+          <img
+            src="../assets/sections/hero/hero15.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-16">
+          <img
+            src="../assets/sections/hero/hero16.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-17">
+          <img
+            src="../assets/sections/hero/hero17.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-18">
+          <img
+            src="../assets/sections/hero/hero18.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-19">
+          <img
+            src="../assets/sections/hero/hero19.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-20">
+          <img
+            src="../assets/sections/hero/hero20.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-hero" id="hero-21">
+          <img
+            src="../assets/sections/hero/hero21.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <!--/Hero-->
+        <!--Footer-->
+        <figure class="item project w-1/2 p-2" data-filter="st-footer" id="footer-1">
+          <img
+            src="../assets/sections/footer/footer1.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-footer" id="footer-2">
+          <img
+            src="../assets/sections/footer/footer2.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-footer" id="footer-3">
+          <img
+            src="../assets/sections/footer/footer3.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <!--/Footer-->
+        <!--Features-->
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-1">
+          <img
+            src="../assets/sections/features/features1.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-2">
+          <img
+            src="../assets/sections/features/features2.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-3">
+          <img
+            src="../assets/sections/features/features3.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-4">
+          <img
+            src="../assets/sections/features/features4.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-5">
+          <img
+            src="../assets/sections/features/features5.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-6">
+          <img
+            src="../assets/sections/features/features6.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-7">
+          <img
+            src="../assets/sections/features/features7.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-8">
+          <img
+            src="../assets/sections/features/features8.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-9">
+          <img
+            src="../assets/sections/features/features9.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-10">
+          <img
+            src="../assets/sections/features/features10.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-11">
+          <img
+            src="../assets/sections/features/features11.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-12">
+          <img
+            src="../assets/sections/features/features12.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-13">
+          <img
+            src="../assets/sections/features/features13.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-14">
+          <img
+            src="../assets/sections/features/features14.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-15">
+          <img
+            src="../assets/sections/features/features15.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-16">
+          <img
+            src="../assets/sections/features/features16.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-17">
+          <img
+            src="../assets/sections/features/features17.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-18">
+          <img
+            src="../assets/sections/features/features18.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-19">
+          <img
+            src="../assets/sections/features/features19.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-20">
+          <img
+            src="../assets/sections/features/features20.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-21">
+          <img
+            src="../assets/sections/features/features21.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-features" id="features-22">
+          <img
+            src="../assets/sections/features/features22.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <!--/Features-->
+        <!--Contents-->
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-1">
+          <img
+            src="../assets/sections/contents/content1.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-2">
+          <img
+            src="../assets/sections/contents/content2.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-3">
+          <img
+            src="../assets/sections/contents/content3.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-4">
+          <img
+            src="../assets/sections/contents/content4.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-5">
+          <img
+            src="../assets/sections/contents/content5.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-6">
+          <img
+            src="../assets/sections/contents/content6.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-7">
+          <img
+            src="../assets/sections/contents/content7.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-8">
+          <img
+            src="../assets/sections/contents/content8.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-9">
+          <img
+            src="../assets/sections/contents/content9.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-10">
+          <img
+            src="../assets/sections/contents/content10.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-11">
+          <img
+            src="../assets/sections/contents/content11.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-12">
+          <img
+            src="../assets/sections/contents/content12.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-13">
+          <img
+            src="../assets/sections/contents/content13.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-14">
+          <img
+            src="../assets/sections/contents/content14.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-15">
+          <img
+            src="../assets/sections/contents/content15.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-16">
+          <img
+            src="../assets/sections/contents/content16.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-17">
+          <img
+            src="../assets/sections/contents/content17.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-18">
+          <img
+            src="../assets/sections/contents/content18.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-19">
+          <img
+            src="../assets/sections/contents/content19.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-20">
+          <img
+            src="../assets/sections/contents/content20.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-21">
+          <img
+            src="../assets/sections/contents/content21.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-22">
+          <img
+            src="../assets/sections/contents/content22.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-23">
+          <img
+            src="../assets/sections/contents/content23.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-24">
+          <img
+            src="../assets/sections/contents/content24.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-25">
+          <img
+            src="../assets/sections/contents/content25.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-26">
+          <img
+            src="../assets/sections/contents/content26.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-27">
+          <img
+            src="../assets/sections/contents/content27.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-28">
+          <img
+            src="../assets/sections/contents/content28.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-29">
+          <img
+            src="../assets/sections/contents/content29.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-30">
+          <img
+            src="../assets/sections/contents/content30.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-31">
+          <img
+            src="../assets/sections/contents/content31.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-contents" id="contents-32">
+          <img
+            src="../assets/sections/contents/content32.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <!--/Contents-->
+        <!--Pricings-->
+        <figure class="item project w-1/2 p-2" data-filter="st-pricings" id="pricings-1">
+          <img
+            src="../assets/sections/pricings/pricing1.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-pricings" id="pricings-2">
+          <img
+            src="../assets/sections/pricings/pricing2.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-pricings" id="pricings-3">
+          <img
+            src="../assets/sections/pricings/pricing3.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-pricings" id="pricings-4">
+          <img
+            src="../assets/sections/pricings/pricing4.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <!--/Pricings-->
+        <!--FAQs-->
+        <figure class="item project w-1/2 p-2" data-filter="st-faqs" id="faqs-1">
+          <img
+            src="../assets/sections/faqs/faq1.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-faqs" id="faqs-2">
+          <img
+            src="../assets/sections/faqs/faq2.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-faqs" id="faqs-3">
+          <img
+            src="../assets/sections/faqs/faq3.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <!--/FAQs-->
+        <!--Steps-->
+        <figure class="item project w-1/2 p-2" data-filter="st-steps" id="steps-1">
+          <img
+            src="../assets/sections/steps/step1.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-steps" id="steps-2">
+          <img
+            src="../assets/sections/steps/step2.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-steps" id="steps-3">
+          <img
+            src="../assets/sections/steps/step3.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-steps" id="steps-4">
+          <img
+            src="../assets/sections/steps/step4.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-steps" id="steps-5">
+          <img
+            src="../assets/sections/steps/step5.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-steps" id="steps-6">
+          <img
+            src="../assets/sections/steps/step6.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-steps" id="steps-7">
+          <img
+            src="../assets/sections/steps/step7.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-steps" id="steps-8">
+          <img
+            src="../assets/sections/steps/step8.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <!--/Steps-->
+        <!--Teams-->
+        <figure class="item project w-1/2 p-2" data-filter="st-teams" id="teams-1">
+          <img
+            src="../assets/sections/teams/team1.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-teams" id="teams-2">
+          <img
+            src="../assets/sections/teams/team2.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-teams" id="teams-3">
+          <img
+            src="../assets/sections/teams/team3.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-teams" id="teams-4">
+          <img
+            src="../assets/sections/teams/team4.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-teams" id="teams-5">
+          <img
+            src="../assets/sections/teams/team5.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-teams" id="teams-6">
+          <img
+            src="../assets/sections/teams/team6.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <!--/Teams-->
+        <!--Blog-->
+        <figure class="item project w-1/2 p-2" data-filter="st-blog" id="blog-1">
+          <img
+            src="../assets/sections/blog/blog1.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-blog" id="blog-2">
+          <img
+            src="../assets/sections/blog/blog2.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-blog" id="blog-3">
+          <img
+            src="../assets/sections/blog/blog3.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-blog" id="blog-4">
+          <img
+            src="../assets/sections/blog/blog4.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-blog" id="blog-5">
+          <img
+            src="../assets/sections/blog/blog5.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-blog" id="blog-6">
+          <img
+            src="../assets/sections/blog/blog6.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-blog" id="blog-7">
+          <img
+            src="../assets/sections/blog/blog7.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-blog" id="blog-8">
+          <img
+            src="../assets/sections/blog/blog8.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <!--/Blog-->
+        <!--Stats-->
+        <figure class="item project w-1/2 p-2" data-filter="st-stats" id="stats-1">
+          <img
+            src="../assets/sections/stats/stats1.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-stats" id="stats-2">
+          <img
+            src="../assets/sections/stats/stats2.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-stats" id="stats-3">
+          <img
+            src="../assets/sections/stats/stats3.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-stats" id="stats-4">
+          <img
+            src="../assets/sections/stats/stats4.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-stats" id="stats-5">
+          <img
+            src="../assets/sections/stats/stats5.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-stats" id="stats-6">
+          <img
+            src="../assets/sections/stats/stats6.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-stats" id="stats-7">
+          <img
+            src="../assets/sections/stats/stats7.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-stats" id="stats-8">
+          <img
+            src="../assets/sections/stats/stats8.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <figure class="item project w-1/2 p-2" data-filter="st-stats" id="stats-9">
+          <img
+            src="../assets/sections/stats/stats9.webp"
+            alt=""
+            class="border border-gray-800 cursor-move hover:shadow transition-normal hover:translate-y-1 hover:border-teal-accent-400"
+        />
+        </figure>
+        <!--/Stats-->
+      </div>
+    </section>
+    <section
+      class="bg-deep-purple-accent-700 p-8 pb-0 w-1/3 flex flex-col fixed top-0 bottom-0 right-0"
+    >
+      <header class="mb-4 flex">
+        <button id="generate"
+          class="mx-2 w-1/2 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-gray-100 transition duration-200 rounded shadow-md bg-gray-900 hover:bg-gray-800 focus:shadow-outline focus:outline-none"
+        >
+          Generate HTML
+        </button>
+        <button id="delete"
+          class="mx-2 w-1/2 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-gray-100 transition duration-200 rounded shadow-md bg-red-900 hover:bg-red-800 focus:shadow-outline focus:outline-none"
+        >
+          Delete the last one
+        </button>
+      </header>
+
+      <div id="drop-right"
+        class="flex flex-col flex-1 border js-droppable border-deep-purple-accent-700 overflow-y-auto"
+      >
+    </div>
+      <div class="text-center text-gray-100 py-4">
+        Made by
+        <a
+          class="textgreene hover:ugreend text-teal-accent-400 hover:text-teal-accent-700 font-bold"
+          target="_blank"
+          href="https://lars-kemper.com"
+          >Lars Kemper</a
+        >
+      </div>
+    </section>
+    <!--/section-->
+</body>
+</html>
+<script src="../js/app.js"></script>
+<script src="../js/bundle.js"></script>
