@@ -11,6 +11,7 @@ simply open the generator.html file in your browser
   - Sortable
   - js-file-download
   - browserify
+
  CSS Framework:
   - Tailwindcss
   - Kometa UI Kit
