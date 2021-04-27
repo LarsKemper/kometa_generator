@@ -6,7 +6,7 @@
 # How to run
 simply open the /html/index.html file in your browser
 
-# Built With
+# Usage
  JS Libarys:
   - Sortable
   - js-file-download
