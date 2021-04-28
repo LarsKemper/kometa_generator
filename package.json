@@ -4,7 +4,6 @@
   "description": "",
   "main": "public/js/generate.js",
   "scripts": {
-    "install": "npm install animejs browserify js-file-download"
     "start": "public/js/generate.js"
   },
   "keywords": [],
