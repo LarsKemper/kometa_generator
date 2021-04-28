@@ -1,0 +1,23 @@
+{
+  "name": "CSS_Generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/js/generate.js",
+  "scripts": {
+    "install": "npm install animejs browserify js-file-download"
+    "start": "public/js/generate.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "tailwindcss": "^2.0.3"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "browserify": "^17.0.0",
+    "js-file-download": "^0.4.12"
+  }
+}
